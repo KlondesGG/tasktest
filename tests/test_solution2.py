@@ -1,7 +1,11 @@
 import pytest
+import sys
+import os
+
+# Добавляем путь к src для импорта solution2
+sys.path.append(os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'src'))
+
 from solution2 import analyze_purchases
-
-
 class TestAnalyzePurchases:
     """Тесты для функции analyze_purchases"""
     
